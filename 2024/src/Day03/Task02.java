@@ -2,7 +2,6 @@ package Day03;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task02 {
@@ -37,7 +36,6 @@ public class Task02 {
                 if (extractedValues.length != 2 || !extractedValues[0].chars().allMatch(Character::isDigit) || !extractedValues[1].chars().allMatch(Character::isDigit)) {
                     continue;
                 }
-                System.out.println(Arrays.toString(extractedValues));
                 int numberOne = Integer.parseInt(extractedValues[0]);
                 int numberTwo = Integer.parseInt(extractedValues[1]);
                 result += (numberOne * numberTwo);
